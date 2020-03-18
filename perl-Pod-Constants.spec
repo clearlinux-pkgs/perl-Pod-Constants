@@ -4,7 +4,7 @@
 #
 Name     : perl-Pod-Constants
 Version  : 0.19
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/M/MG/MGV/Pod-Constants-0.19.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MG/MGV/Pod-Constants-0.19.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libp/libpod-constants-perl/libpod-constants-perl_0.19-1.debian.tar.xz
@@ -81,7 +81,7 @@ make TEST_VERBOSE=1 test
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/perl-Pod-Constants
 cp %{_builddir}/Pod-Constants-0.19/LICENSE %{buildroot}/usr/share/package-licenses/perl-Pod-Constants/3dba87fdd2fcb5c3cc93f325c7d938f24e976af1
-cp %{_builddir}/Pod-Constants-0.19/deblicense/copyright %{buildroot}/usr/share/package-licenses/perl-Pod-Constants/8dcb8863bef54e5bdd8046c1a13a6dbebf94b7e9
+cp %{_builddir}/debian/copyright %{buildroot}/usr/share/package-licenses/perl-Pod-Constants/8dcb8863bef54e5bdd8046c1a13a6dbebf94b7e9
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -106,4 +106,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/Pod/Constants.pm
+/usr/lib/perl5/vendor_perl/5.30.2/Pod/Constants.pm
