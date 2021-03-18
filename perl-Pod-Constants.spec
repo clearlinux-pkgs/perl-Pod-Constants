@@ -4,7 +4,7 @@
 #
 Name     : perl-Pod-Constants
 Version  : 0.19
-Release  : 13
+Release  : 14
 URL      : https://cpan.metacpan.org/authors/id/M/MG/MGV/Pod-Constants-0.19.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MG/MGV/Pod-Constants-0.19.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libp/libpod-constants-perl/libpod-constants-perl_0.19-1.debian.tar.xz
@@ -106,4 +106,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/Pod/Constants.pm
+/usr/lib/perl5/vendor_perl/5.32.1/Pod/Constants.pm
