@@ -4,7 +4,7 @@
 #
 Name     : perl-Pod-Constants
 Version  : 0.19
-Release  : 14
+Release  : 15
 URL      : https://cpan.metacpan.org/authors/id/M/MG/MGV/Pod-Constants-0.19.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/M/MG/MGV/Pod-Constants-0.19.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libp/libpod-constants-perl/libpod-constants-perl_0.19-1.debian.tar.xz
@@ -13,7 +13,9 @@ Group    : Development/Tools
 License  : Artistic-2.0
 Requires: perl-Pod-Constants-license = %{version}-%{release}
 Requires: perl-Pod-Constants-perl = %{version}-%{release}
+Requires: perl(Pod::Parser)
 BuildRequires : buildreq-cpan
+BuildRequires : perl(Pod::Parser)
 
 %description
 Pod::Constants version 0.19
